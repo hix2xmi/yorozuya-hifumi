@@ -21,7 +21,7 @@ max-width: 1200px;
 
 .home_1{
 width: 85%;
-padding-bottom:15%;
+padding-bottom:25%;
 line-height: 2;
 margin-left: auto;
 margin-right: auto;
@@ -31,44 +31,50 @@ margin-right: auto;
 .work1 img{
 margin-top: -10%;
 
-aspect-ratio: 3 / 1;
+aspect-ratio: 2.5 / 1;
 object-fit: cover;
 object-position:bottom;
 width: 100%;
 height: 100%;
 border:3px solid #2F2F2F;
-margin-bottom: 3%;
+margin-bottom: 5%;
 opacity: 0;
 animation: slideIn_R 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 animation-delay: .8s;
 }
   
-
 .work2 img{
-aspect-ratio: 3 / 1;
+aspect-ratio: 2.5 / 1;
 object-fit: cover;
 object-position:center;
 width: 100%;
 height: 100%;
 border:3px solid #2F2F2F;
-margin-bottom: 3%;
+margin-bottom: 5%;
 opacity: 0;
 animation: slideIn_L 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 animation-delay: 1s;
 }
 
 .work3 img{
-aspect-ratio: 3 / 1;
+aspect-ratio: 2.5 / 1;
 object-fit: cover;
 object-position:top;
 width: 100%;
 height: 100%;
 border:3px solid #2F2F2F;
-margin-bottom: 3%;
+margin-bottom: 5%;
 opacity: 0;
 animation: slideIn_R 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 animation-delay: 1.2s;
 }
+
+.more_1{
+opacity: 0;
+animation: slideIn_B 1.5s forwards;
+animation-delay: 1.5s;
+}
+
 
 @keyframes slideIn_R {
   0% {
@@ -84,25 +90,19 @@ animation-delay: 1.2s;
 }
 
 @keyframes slideIn_L {
-    0% {
-      transform: translateX(-180px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-    }
-    40%,100% {
-      opacity: 1;
-    }
+  0% {
+    transform: translateX(-180px);
+    opacity: 0;
   }
-
-.home_2{
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-line-height: 2;
-padding-bottom:15%;
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
 }
+
+
 
 .home_2 img{
 width: 20%;
@@ -117,13 +117,43 @@ padding-bottom:1%;
 }
 
 
+
+
+.home_2{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+line-height: 2;
+padding-bottom:25%;
+opacity: 0;
+}
+
 .home_3{
 width: 90%;
 margin-left: auto;
 margin-right: auto;
 line-height: 2;
-padding-bottom:15%;
+padding-bottom:25%;
+opacity: 0;
 }
+
+
+.animated{
+animation: slideIn_B 1.5s forwards;
+}
+
+@keyframes slideIn_B{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 
 .more_1 a {
@@ -244,7 +274,7 @@ transition: all 0.3s;
 
 
 .contents h1{
-font-size:35pt;
+font-size: 40pt;
 font-weight: bold;
 position: relative;
 padding: 3%;

@@ -17,14 +17,14 @@ padding-bottom: 5%;
 }
 
 .more h2{
-font-size: clamp(18pt, 5vw, 28pt);
+font-size:28pt;
 font-weight: bold;
 color:  rgb(18, 18, 37);
 padding-bottom:5%;
 }
 
 .more h3{
-font-size: clamp(16pt, 5vw, 20pt);
+font-size:20pt;
 font-weight: bold;
 color:  rgb(18, 18, 37);
 }
